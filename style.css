@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    /* box-sizing: border-box; */
 }
 body{
     background-color: white;
@@ -88,4 +89,32 @@ footer{
 footer a{
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width:768px){
+    ul{
+        display: none;
+    }
+    h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    #mainContent{
+        height: auto;
+        padding: 40px 10px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    #mainContentText{
+        width: 100%;
+    }
+    #benefits ul{
+        flex-direction: column;
+        row-gap:20px ;
+    }
+    #benefits{
+        height: auto;
+        padding: 40px 10px;
+        box-sizing: border-box;
+    }
 }
